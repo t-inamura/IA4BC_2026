@@ -198,6 +198,7 @@ p:last-child { margin-bottom: 0; }
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
   letter-spacing: 0.05em;
+  object-fit: cover;
 }
 .sc-name { font-weight: 500; font-size: 15px; color: var(--navy); }
 .sc-affil { font-size: 12px; color: var(--muted); font-weight: 300; margin-top: 2px; }
