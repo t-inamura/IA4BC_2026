@@ -178,7 +178,7 @@ p:last-child { margin-bottom: 0; }
 .date-card .dc-date { font-size: 18px; font-family: 'Playfair Display', serif; color: var(--navy); }
 
 /* SPEAKER CARDS */
-.speaker-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+.speaker-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr)); gap: 20px; }
 .speaker-card {
   background: var(--white);
   border: 1px solid var(--border);
@@ -189,7 +189,7 @@ p:last-child { margin-bottom: 0; }
 }
 .speaker-card .sc-header { display: flex; align-items: flex-start; gap: 14px; }
 .sc-avatar {
-  width: 46px; height: 46px;
+  width: 120px; height: 120px;
   border-radius: 50%;
   background: var(--navy);
   color: #fff;
