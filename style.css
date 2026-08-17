@@ -310,14 +310,13 @@ footer a { color: var(--teal); text-decoration: none; }
 .outcome-item { display: flex; gap: 16px; align-items: flex-start; }
 .outcome-num {
   counter-increment: outcomes;
-  min-width: 32px; height: 32px;
-  background: var(--teal);
-  color: #fff;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 13px; font-weight: 500;
+  min-width: 20px;
+  color: var(--muted);
+  font-size: 14px; font-weight: 400;
   flex-shrink: 0;
+  padding-top: 5px;
 }
-.outcome-num::before { content: counter(outcomes); }
+.outcome-num::before { content: counter(outcomes) "."; }
 .outcome-text { font-size: 14px; color: var(--text); font-weight: 300; line-height: 1.7; padding-top: 5px; }
 
 @media (max-width: 640px) {
