@@ -319,6 +319,37 @@ footer a { color: var(--teal); text-decoration: none; }
 .outcome-num::before { content: counter(outcomes) "."; }
 .outcome-text { font-size: 14px; color: var(--text); font-weight: 300; line-height: 1.7; padding-top: 5px; }
 
+/* PROGRAM PAGE — larger type. Body text floors at 22px; headings sit above it. */
+.page-program .section-title { font-size: 28px; }
+.page-program .hero-desc { font-size: 22px; }
+.page-program .schedule-table { font-size: 22px; }
+.page-program .schedule-table th { font-size: 22px; letter-spacing: 0.06em; padding-bottom: 14px; }
+.page-program .schedule-table td { padding: 18px 0; }
+.page-program .schedule-table td:first-child { font-size: 22px; width: 200px; }
+.page-program .sc-affil { font-size: 22px; margin-top: 6px; }
+.page-program .glance-table { font-size: 22px; }
+.page-program .glance-table td { padding: 16px 0; }
+.page-program .glance-table td:first-child { width: 260px; }
+.page-program .outcome-text { font-size: 22px; }
+.page-program .outcome-num { font-size: 22px; min-width: 30px; padding-top: 7px; }
+.page-program .note { font-size: 22px; padding: 1rem 1.5rem; }
+
+@media (max-width: 640px) {
+  /* program page: 22px leaves too little room for the session column on a phone */
+  .page-program .hero-desc,
+  .page-program .schedule-table,
+  .page-program .schedule-table th,
+  .page-program .schedule-table td:first-child,
+  .page-program .sc-affil,
+  .page-program .glance-table,
+  .page-program .outcome-text,
+  .page-program .outcome-num,
+  .page-program .note { font-size: 18px; }
+  .page-program .schedule-table td:first-child { width: 130px; padding-right: 1rem; }
+  .page-program .glance-table td:first-child { width: 150px; }
+  .page-program .section-title { font-size: 24px; }
+}
+
 @media (max-width: 640px) {
   .nav-logo { font-size: 15px; margin-right: 1rem; }
   nav a { font-size: 12px; padding: 1rem 0.6rem; }
