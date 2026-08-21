@@ -209,6 +209,10 @@ p:last-child { margin-bottom: 0; }
   transition: color 0.2s, border-color 0.2s;
 }
 .sc-name a:hover { color: var(--teal); border-bottom-color: var(--teal); }
+/* the avatar links to the same card as the name; wrapping the img moves the
+   flex item to the anchor, so the no-shrink rule has to move with it */
+.sc-header > a { display: block; flex-shrink: 0; line-height: 0; transition: opacity 0.2s; }
+.sc-header > a:hover { opacity: 0.85; }
 /* Anchor targets sit below the sticky header, whose height changes with
    how many lines the nav wraps to: 123px at 641-779px, 66px above that. */
 .org-card[id] { scroll-margin-top: 150px; }
