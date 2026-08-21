@@ -363,8 +363,8 @@ footer a { color: var(--teal); text-decoration: none; }
 @media (max-width: 640px) {
   .nav-logo { font-size: 15px; margin-right: 1rem; }
   nav a { font-size: 12px; padding: 1rem 0.6rem; }
-  /* the nav wraps to three lines here, making the header 159px tall */
-  .org-card[id] { scroll-margin-top: 180px; }
+  /* the nav wraps here: three lines (159px) at 360px and up, four (212px) at 320px */
+  .org-card[id] { scroll-margin-top: 215px; }
   .hero { padding: 3rem 1.25rem 2.5rem; }
   .page-wrap { padding: 2.5rem 1.25rem; }
   .dates-grid { grid-template-columns: 1fr 1fr; }
