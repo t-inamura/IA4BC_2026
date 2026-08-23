@@ -200,7 +200,7 @@ p:last-child { margin-bottom: 0; }
   letter-spacing: 0.05em;
   object-fit: cover;
 }
-.sc-name { font-weight: 500; font-size: 15px; color: var(--navy); }
+.sc-name { font-weight: 500; font-size: 19px; color: var(--navy); }
 .sc-affil { font-size: 15px; color: var(--muted); font-weight: 300; margin-top: 2px; }
 .sc-name a {
   color: inherit;
@@ -240,6 +240,9 @@ p:last-child { margin-bottom: 0; }
 .org-contact { font-size: 13px; color: var(--muted); margin-bottom: 1rem; }
 .org-contact a { color: var(--teal); text-decoration: none; }
 .org-bio { font-size: 14px; line-height: 1.75; color: var(--text); font-weight: 300; }
+/* The talk title is the first <p> in each speaker card; size it with the
+   name above it. Scoped to [id] so the organizers page is untouched. */
+.org-card[id] > p.org-bio:first-of-type { font-size: 20px; line-height: 1.5; }
 
 /* PROGRAM */
 .schedule-table { width: 100%; border-collapse: collapse; font-size: 14px; }
