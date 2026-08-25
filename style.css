@@ -252,6 +252,15 @@ p:last-child { margin-bottom: 0; }
 .schedule-table td:last-child { color: var(--text); }
 .schedule-table tr.break td { color: var(--muted); font-style: italic; }
 .schedule-table tr.highlight td:last-child { font-weight: 500; }
+/* Speaker names in the schedule link through to their card on the speakers
+   page; there is no global rule for <a>, so match .sc-name a here. */
+.schedule-table a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  transition: color 0.2s, border-color 0.2s;
+}
+.schedule-table a:hover { color: var(--teal); border-bottom-color: var(--teal); }
 
 /* CFP BOX */
 .cfp-highlight {
